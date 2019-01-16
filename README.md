@@ -22,6 +22,7 @@ basic common attributes of single page apps much quicker.
 - Radio Button Component
 - Button Component
 - Hamburger Menu
+- Carousel Component
 - Progress Bar
 - Clock
 - Timer

@@ -12,3 +12,57 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+ol, ul {
+	list-style: none;
+}
+
+.splash-container{
+  background: #0D0106;
+  grid-column: 3 / 5;
+  grid-row: 4;
+  opacity: 0.8;
+}
+
+.splash-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.splash-head{
+  color: #BFB48F;
+  font-size: 20pt;
+  padding: 5px;
+  border: 3px double #605B56;
+  grid-column: 3 / 6;
+}
+
+.splash-text{
+  color: #BFB48F;
+  font-size: 14pt;
+  grid-column: 2 / 7;
+}
+
+.template-list{
+  grid-column: 3 / 6;
+}
+
+.template-list-item:nth-child(odd){
+  border: 3px double #5C0029;
+  color: #BFB48F;
+  font-size: 12pt;
+  margin: 5px;
+}
+
+.template-list-item:nth-child(even){
+  border: 3px double #605B56;
+  color: #BFB48F;
+  font-size: 12pt;
+  margin: 5px;
+}
+
+.template-list-item:hover{
+  cursor: pointer;
+  border: 3px solid #F06543;
+  font-size: 13pt;
+}

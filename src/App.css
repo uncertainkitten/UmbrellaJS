@@ -1,5 +1,15 @@
 .App {
   text-align: center;
+  background: rgb(13,1,6);
+  background: linear-gradient(0deg, rgba(13,1,6,1) 0%, rgba(92,0,41,1) 50%, rgba(240,101,67,1) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .App-logo {
