@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Cassandra's ReactJS Templates
+## Cassandra's ReactJS Templates (UmbrellaJS - because it keeps you DRY)
 
 This repo is a group of unconnected components with a Create React App infrastructure wrapped around them so I can test and style them easily.
 
