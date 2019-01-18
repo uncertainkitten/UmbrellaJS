@@ -14,7 +14,9 @@ code {
 }
 
 ol, ul {
-	list-style: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* Splash Page Styling */
@@ -32,38 +34,44 @@ ol, ul {
 
 .splash-head{
   color: #BFB48F;
-  font-size: 20pt;
+  font-size: 18pt;
   padding: 5px;
   border: 3px double #605B56;
   grid-column: 3 / 6;
+  font-family: 'Indie Flower', cursive;
 }
 
 .splash-text{
   color: #BFB48F;
-  font-size: 14pt;
+  font-size: 15pt;
   grid-column: 2 / 7;
+  font-family: 'Indie Flower', cursive;
 }
 
 .template-list{
+  text-align: center;
   grid-column: 3 / 6;
 }
 
 .template-list-item:nth-child(odd){
   border: 3px double #5C0029;
   color: #BFB48F;
-  font-size: 12pt;
+  font-size: 14pt;
+  margin: 5px;
+  font-family: 'Indie Flower', cursive;
 }
 
 .template-list-item:nth-child(even){
   border: 3px double #605B56;
   color: #BFB48F;
-  font-size: 12pt;
+  font-size: 14pt;
+  margin: 5px;
+  font-family: 'Indie Flower', cursive;
 }
 
 .template-list-item:hover{
   cursor: pointer;
   border: 3px solid #F06543;
-  font-size: 13pt;
 }
 
 /* NavBar Styling */
@@ -76,9 +84,10 @@ ol, ul {
 
 .nav-link{
   color: #605B56;
-  font-size: 16pt;
+  font-size: 18pt;
   text-decoration-line: none;
   margin: 10px;
+  font-family: 'Indie Flower', cursive;
 }
 
 .nav-link:visited{
@@ -89,3 +98,5 @@ ol, ul {
   color: #BFB48F;
   cursor: pointer;
 }
+
+/* Login Form Styling */

@@ -11,9 +11,9 @@ basic common attributes of single page apps much quicker.
 
 ## Current Templates
 - Splash Page
+- Nav Bar
 
 ## Future Templates
-- Nav Bar
 - Login Form
 - Basic Text Form
 - Dropdown Component
