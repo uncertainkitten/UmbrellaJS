@@ -117,3 +117,65 @@ ol, ul {
 }
 
 /* Login Form Styling */
+.login-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  background: #0D0106;
+  grid-column: 3 / 5;
+  grid-row: 4;
+  opacity: 0.8;
+}
+
+.login-header{
+  grid-row: 1 / 2;
+  grid-column: 2 / 8;
+  font-family: 'Indie Flower', cursive;
+  color: #BFB48F;
+  font-size: 18pt;
+  padding: 5px;
+  border: 3px double #605B56;
+}
+
+.login-form{
+  display: grid;
+  grid-template-columns: 3fr 2fr 3fr;
+  grid-row-start: 2;
+  grid-column: 2 / 8;
+}
+
+.login-label{
+  grid-column: 1 / 2;
+  font-size: 14pt;
+  font-family: 'Indie Flower', cursive;
+  color: #BFB48F;
+  border: 3px double #605B56;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+.login-input{
+  grid-column: 3;
+  font-size: 14pt;
+  font-family: 'Indie Flower', cursive;
+  color: #0D0106;
+  border: 3px double #605B56;
+  margin-bottom: 5px;
+}
+
+.login-btn{
+  color: #BFB48F;
+  background-color: #5C0029;
+  box-shadow: none;
+  border: none;
+  grid-column: 1 / 4;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 14pt;
+  font-family: 'Indie Flower', cursive;
+}
+
+.login-btn:hover{
+  cursor: pointer;
+  background-color: #7E224A;
+}
