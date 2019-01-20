@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 class LoginForm extends React.Component{
   constructor(props){
@@ -49,6 +50,7 @@ class LoginForm extends React.Component{
         <h3 className="login-header">Login</h3>
         <form className="login-form" onSubmit={this.handleSubmit}>
           {this.state.formFields}
+          <Link className="login-link" to="/">Back</Link>
           <input className="login-btn" type="submit" value="Login" />
         </form>
       </div>
