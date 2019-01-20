@@ -11,10 +11,15 @@ basic common attributes of single page apps much quicker.
 
 ## Current Templates
 - Splash Page
+-- Currently just a page with a cool gradient background and some basic information in a centered box.  That box may become the carousel component - which would reduce the splash page to literally just a cool gradient background and a container for stuff you want on the splash page
 - Nav Bar
+-- Add whatever things you want to the top bar by giving the component an array of "labels" as props.
+- Login Form
+-- Can be used as both signup and login form, and thusly should probably be named better - to accommodate, I will also need to add a prop to pass to
+the form.
+-- Takes in an array of "fields" as props
 
 ## Future Templates
-- Login Form
 - Basic Text Form
 - Dropdown Component
 - Checkbox Component

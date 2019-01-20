@@ -213,3 +213,57 @@ ol, ul {
   color: #BFB48F;
   text-decoration: none;
 }
+
+/* Dropdown styles */
+.dropdown-container{
+  grid-column: 2 / 7;
+  display: grid;
+  grid-template-columns: 2fr 1fr 4fr;
+}
+
+.dropdown-label{
+  grid-column: 1 / 2;
+  color: #BFB48F;
+  font-size: 14pt;
+  font-family: 'Indie Flower', cursive;
+}
+
+.dropdown-list{
+  text-align: center;
+  grid-column: 3;
+  border: 3px double #0D0106;
+  background-color: #5C0029;
+}
+
+.dropdown-list:hover{
+  cursor: pointer;
+}
+
+.dropdown-hide{
+  grid-column: 3;
+  display: none;
+}
+
+.dropdown-show{
+  grid-column: 3;
+  display: inline-block;
+}
+
+.dropdown-selected{
+  grid-column: 3;
+  color: #605B56;
+  font-size: 14pt;
+  font-family: 'Indie Flower', cursive;
+}
+
+.dropdown-option{
+  grid-column: 3;
+  color: #605B56;
+  font-size: 14pt;
+  font-family: 'Indie Flower', cursive;
+}
+
+.dropdown-option:hover{
+  cursor: pointer;
+  background-color: #5C0029;
+}

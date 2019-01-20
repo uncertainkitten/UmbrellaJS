@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import Dropdown from './dropdown';
 
 class Splash extends React.Component{
   render(){
@@ -17,6 +18,7 @@ class Splash extends React.Component{
             <li className="template-list-item">Index (portrait)</li>
             <li className="template-list-item">Index (landscape)</li>
           </ul>
+          <Dropdown options={["Apples", "Bananas", "Space", "Time", "Canteloupes"]} label="Stuff" />
         </div>
       </div>
     );
