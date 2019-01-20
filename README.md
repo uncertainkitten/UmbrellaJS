@@ -10,34 +10,40 @@ There are a lot of libraries out there to make forms easier or do basic things, 
 basic common attributes of single page apps much quicker.
 
 ## Current Templates
-- Splash Page
--- Currently just a page with a cool gradient background and some basic information in a centered box.  That box may become the carousel component - which would reduce the splash page to literally just a cool gradient background and a container for stuff you want on the splash page
-- Nav Bar
--- Add whatever things you want to the top bar by giving the component an array of "labels" as props.
-- Login Form
--- Can be used as both signup and login form, and thusly should probably be named better - to accommodate, I will also need to add a prop to pass to
+- ### Splash Page
+   - Currently just a page with a cool gradient background and some basic information in a centered box.  That box may become the carousel component - which would reduce the splash page to literally just a cool gradient background and a container for stuff you want on the splash page
+
+- ### Nav Bar
+  - Add whatever things you want to the top bar by giving the component an array of "labels" as props.
+
+- ### Login Form
+   - Can be used as both signup and login form, and thusly should probably be named better - to accommodate, I will also need to add a prop to pass to
 the form.
--- Takes in an array of "fields" as props
+   - Takes in an array of "fields" as props
+
+- ### Dropdown Component
+   - Takes in label and options as props - outputs a list as a dropdown that changes "Selected" in state - to access the "value", just pass up this.state.selected (May set this up so that this ends up the default behavior)
+
 
 ## Future Templates
-- Basic Text Form
-- Dropdown Component
-- Checkbox Component
-- Radio Button Component
-- Button Component
-- Hamburger Menu
-- Carousel Component
-- Progress Bar
-- Clock
-- Timer
-- Clicker w/ Counter
-- Upload Form
-- Download Page
-- Index (tall)
-- Index (wide)
-- Index Item (read only)
-- Index Item (line item edit)
-- More to be determined
+- ### Basic Text Form
+- ### Checkbox Component
+- ### Radio Button Component
+- ### Button Component
+- ### Hamburger Menu
+- ### Carousel Component
+- ### Progress Bar
+- ### Clock
+- ### Timer
+- ### Clicker w/ Counter
+- ### Upload Form
+- ### Download Page
+- ### Index (tall)
+- ### Index (wide)
+- ### Index Item (read only)
+- ### Index Item (line item edit)
+
+More to be determined
 
 ## Installation
 
