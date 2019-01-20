@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 class Splash extends React.Component{
   render(){
@@ -9,7 +10,7 @@ class Splash extends React.Component{
           <p className="splash-text">This might become its own component</p>
           <p className="splash-text">But for now, have a bunch of not-links to templates!</p>
           <ul className="template-list">
-            <li className="template-list-item">Login Form</li>
+            <li className="template-list-item"><Link className="splash-link" to="/login">Login Form</Link></li>
             <li className="template-list-item">Basic Text Form</li>
             <li className="template-list-item">Upload Form</li>
             <li className="template-list-item">Download Page</li>

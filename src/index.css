@@ -70,9 +70,26 @@ ol, ul {
 }
 
 .template-list-item:hover{
-  cursor: pointer;
   border: 3px solid #F06543;
 }
+
+.splash-link{
+  color: #BFB48F;
+  font-size: 14pt;
+  text-decoration-line: none;
+  margin: 10px;
+  font-family: 'Indie Flower', cursive;
+}
+
+.splash-link:visited{
+  color: #F06543;
+}
+
+.splash-link:hover{
+  color: #BFB48F;
+  cursor: pointer;
+}
+
 
 /* NavBar Styling */
 .nav-bar-container{

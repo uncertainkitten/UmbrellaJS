@@ -11,9 +11,13 @@ class App extends Component {
     return (
       <HashRouter>
         <div className="App">
-          <NavBar labels={["Home", "About", "FAQ", "NITRO CHAT"]} />
-          <Splash />
-          <Route path='/login'
+          <Route path='/'
+            render={(routeProps) => (
+              <NavBar {...routeProps} {...{labels: ["Home", "About", "FAQ", "NITRO CHAT"]}} />
+            )}
+          />
+          <Route exact path="/" component={Splash} />
+          <Route exact path='/login'
              render={(routeProps) => (
                <Login {...routeProps} {...{fields: ["email", "username", "ssn"]}} />
              )}
