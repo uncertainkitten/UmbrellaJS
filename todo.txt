@@ -1,0 +1,7 @@
+Next things:
+Make NavBar less janky - use an object with {label: link}
+Make Splash better - use an array of Splash Items
+Set up dropdown to accommodate being passed a method from props to select things rather than only change state
+Set up login handleSubmit to accommodate method for login or signup
+Make login fields less janky - use object with {label: expectedField}
+Add Logo to NavBar
