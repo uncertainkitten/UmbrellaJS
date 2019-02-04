@@ -10,13 +10,15 @@ class NavBar extends React.Component{
   }
 
   componentDidMount(){
-    this.buildArray();
+    this.buildLinkArray();
   }
 
-  buildArray(){
+  buildLinkArray(){
     let newLinks = [];
-    this.props.labels.forEach(link => {
-      newLinks.push(<Link className="nav-link" to={`/${link.toLowerCase()}`}> {link}</Link>);
+    let link;
+    Object.keys(this.props.labels).forEach(label => {
+      link = this.props.labels[label];
+      newLinks.push(<Link className="nav-link" to={link}> {label}</Link>);
     });
     this.setState({linkArray: newLinks});
   }

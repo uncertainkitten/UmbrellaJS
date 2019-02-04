@@ -4,14 +4,19 @@ class CheckboxList extends React.Component{
   constructor(props){
     super(props)
     this.state = {
-      checked: {}
+      checked: {},
+      checkedBoxes: []
     }
+  }
+
+  buildChecklist(){
+    let checkedBoxes = [];
   }
 
   render(){
     return(
       <div className="checkbox-list-container">
-
+        {this.state.checkedBoxes}
       </div>
     );
   }

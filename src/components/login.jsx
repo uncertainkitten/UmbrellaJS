@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-class LoginForm extends React.Component{
+class Form extends React.Component{
   constructor(props){
     super(props);
     this.state = {
@@ -15,15 +15,20 @@ class LoginForm extends React.Component{
   }
 
   buildFormArray(){
-    //All fields should be passed to the form as a prop "fields" - this will splay them out.
-    // Password gets hardcoded due to being a unique field.  Arguably, I should do the same with email.
+    // this.props.fields should be an object with the format {Label: [input type, value]}
+    // create a variable in the forEach with type and value for easier reference
+    // When this.state.formFields is iterated over in the render function, the output will ideally be in the order of the keys
+    // However, as objects do not make guarantees about order, it might be necessary to add a "legend" prop to keep things straight
+    // Which is essentially the keys of the this.props.fields object
     let newFields = [];
-    this.props.fields.forEach( field => {
-      newFields.push(<label className="login-label">{field[0].toUpperCase() + field.substring(1)}</label>)
-      newFields.push(<input className="login-input" type="text" onChange={this.update(field)} value={this.state[field]} />)
+    let inputType;
+    let inputValue;
+    Object.keys(this.props.fields).forEach( label => {
+      inputType = this.props.fields[label][0]
+      inputValue = this.props.fields[label][1]
+      newFields.push(<label className="form-label">{label}</label>)
+      newFields.push(<input className="form-input" type={inputType} onChange={this.update(inputValue)} value={this.state[inputValue]} />)
     });
-    newFields.push(<label className="login-label">Password</label>);
-    newFields.push(<input className="login-input" type="password" onChange={this.update("password")} value={this.state.password} />)
     this.setState({formFields: newFields})
   }
 
@@ -36,26 +41,27 @@ class LoginForm extends React.Component{
   handleSubmit(e){
     e.preventDefault();
     let formSubmit = {};
-    this.props.fields.forEach( field => {
-      formSubmit[field] = this.state[field]
+    let inputValue;
+    Object.keys(this.props.fields).forEach( label => {
+      inputValue = this.props.fields[label][1];
+      formSubmit[inputValue] = this.state[inputValue]
     });
-    formSubmit.password = this.state.password;
     console.log(formSubmit);
     //Note - that console.log should actually be an API calls that sends the information to the server
   }
 
   render(){
     return(
-      <div className="login-container">
-        <h3 className="login-header">Login</h3>
-        <form className="login-form" onSubmit={this.handleSubmit}>
+      <div className="form-container">
+        <h3 className="form-header">Login</h3>
+        <form className="form-form" onSubmit={this.handleSubmit}>
           {this.state.formFields}
-          <Link className="login-link" to="/">Back</Link>
-          <input className="login-btn" type="submit" value="Login" />
+          <Link className="form-link" to="/">Back</Link>
+          <input className="form-btn" type="submit" value={this.props.button} />
         </form>
       </div>
     );
   }
 }
 
-export default LoginForm;
+export default Form;

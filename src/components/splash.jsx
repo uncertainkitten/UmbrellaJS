@@ -11,12 +11,9 @@ class Splash extends React.Component{
           <p className="splash-text">This might become its own component</p>
           <p className="splash-text">But for now, have a bunch of not-links to templates!</p>
           <ul className="template-list">
-            <li className="template-list-item"><Link className="splash-link" to="/login">Login Form</Link></li>
-            <li className="template-list-item">Basic Text Form</li>
-            <li className="template-list-item">Upload Form</li>
-            <li className="template-list-item">Download Page</li>
-            <li className="template-list-item">Index (portrait)</li>
-            <li className="template-list-item">Index (landscape)</li>
+            <li className="template-list-item"><Link className="splash-link" to="/form">Generic Form</Link></li>
+            <li className="template-list-item"><Link className="splash-link" to="/portrait">Index (portrait)</Link></li>
+            <li className="template-list-item"><Link className="splash-link" to="landscape">Index (landscape)</Link></li>
           </ul>
           <Dropdown options={["Apples", "Bananas", "Space", "Time", "Canteloupes"]} label="Stuff" />
         </div>
