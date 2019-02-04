@@ -18,7 +18,7 @@ class IndexItem extends React.Component{
     Object.keys(this.props.contents).forEach(label => {
       item = this.props.contents[label];
       if (label !== "id"){
-        indexItemContents.push(<li className = "index-item-listing">{label} : {item}</li>)
+        indexItemContents.push(<li className = {`index-item-${this.props.orientation}-listing`}>{label} : {item}</li>)
       }
     });
     this.setState({indexItemContents: indexItemContents});
@@ -26,8 +26,8 @@ class IndexItem extends React.Component{
 
   render(){
     return(
-      <div className="index-item-container">
-        <p className="index-item-label">{this.props.label}</p>
+      <div className={`index-item-${this.props.orientation}-container`}>
+        <p className={`index-item-${this.props.orientation}-label`}>{this.props.label}</p>
         {this.state.indexItemContents}
       </div>
     );

@@ -38,6 +38,11 @@ basic common attributes of single page apps much quicker.
   - Takes in a label as props to label the individual item from Index
   -```<IndexItem key={id} contents={"id": 1, "Attack": "5", "Defense": "5"} label="Alice">```
 
+- ### Progress Bar
+  - Use this component with any component you would want to track progress with.  Pass down a percentage of the bar that should be filled - a function in
+  the parent component that uses a slice of state to define this variable is a good pattern.
+
+
 
 ## Future Templates
 - ### Checkbox Component
@@ -45,7 +50,7 @@ basic common attributes of single page apps much quicker.
 - ### Button Component
 - ### Hamburger Menu
 - ### Carousel Component
-- ### Progress Bar
+
 - ### Clock
 - ### Timer
 - ### Clicker w/ Counter

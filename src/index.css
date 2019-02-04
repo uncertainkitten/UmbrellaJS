@@ -267,3 +267,110 @@ ol, ul {
   cursor: pointer;
   background-color: #5C0029;
 }
+
+/* Index Portrait */
+.index-item-portrait{
+  grid-column: 2;
+  grid-row: 2 / 8;
+  margin-left: 10px;
+  border: 3px double #605B56;
+}
+
+.index-list-portrait{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.index-item-portrait-container{
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  margin-top: 10px;
+}
+
+.index-item-portrait-label{
+  grid-column: 1 / 2;
+  grid-row: 2 / span 4;
+  color: #BFB48F;
+  font-size: 16pt;
+  font-family: 'Indie Flower', cursive;
+  border: 3px double #0D0106;
+}
+
+.index-item-portrait-listing{
+  grid-column: 3;
+  grid-row: span 1;
+  color: #BFB48F;
+  font-size: 11pt;
+  font-family: 'Indie Flower', cursive;
+  border: 1px solid #0D0106;
+}
+
+/* Index Landscape */
+.index-item-landscape{
+  grid-column: 2 / 6;
+  grid-row: 2 / 3;
+  margin-left: 10px;
+  border: 3px double #605B56;
+}
+
+.index-list-landscape{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.index-item-landscape-container{
+  padding-bottom: 10px;
+  margin-left: 10px;
+}
+
+.index-item-landscape-label{
+  color: #BFB48F;
+  font-size: 16pt;
+  font-family: 'Indie Flower', cursive;
+  margin-right: 10px;
+  border: 3px double #0D0106;
+}
+
+.index-item-landscape-listing{
+  color: #BFB48F;
+  font-size: 11pt;
+  font-family: 'Indie Flower', cursive;
+  border: 1px solid #0D0106;
+  margin-right: 10px;
+}
+
+/* Widgets */
+.widget-container{
+  grid-column: 3 / 5;
+  grid-row: 4 / 6;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+/* Needs clicker styles */
+
+/* Progress Bar */
+.progress-bar{
+  grid-column: 2;
+  grid-row: span 1;
+  border: 3px solid #0D0106;
+  background-color: #605B56;
+}
+
+/* Clock */
+.clock-container{
+  grid-column: 3;
+  border: 3px solid #BFB48F;
+  background-color: #0D0106;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+}
+
+.clock{
+  grid-row: 2 / 3;
+  color: #FF331F;
+  font-size: 22pt;
+  font-family: 'Indie Flower', cursive;
+  text-shadow: 2px 2px 2px #7F0799;
+}

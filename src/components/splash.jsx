@@ -1,6 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import Dropdown from './dropdown';
+import Widgets from './widgets';
+import Clicker from './clicker';
+import Clock from './clock';
 
 class Splash extends React.Component{
   render(){
@@ -13,7 +16,8 @@ class Splash extends React.Component{
           <ul className="template-list">
             <li className="template-list-item"><Link className="splash-link" to="/form">Generic Form</Link></li>
             <li className="template-list-item"><Link className="splash-link" to="/portrait">Index (portrait)</Link></li>
-            <li className="template-list-item"><Link className="splash-link" to="landscape">Index (landscape)</Link></li>
+            <li className="template-list-item"><Link className="splash-link" to="/landscape">Index (landscape)</Link></li>
+            <li className="template-list-item"><Link className="splash-link" to="/widgets">Widgets</Link></li>
           </ul>
           <Dropdown options={["Apples", "Bananas", "Space", "Time", "Canteloupes"]} label="Stuff" />
         </div>
