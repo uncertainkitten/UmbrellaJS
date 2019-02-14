@@ -1,9 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import Dropdown from './dropdown';
-import Widgets from './widgets';
-import Clicker from './clicker';
-import Clock from './clock';
+import CheckboxList from './checkbox_list';
 
 class Splash extends React.Component{
   render(){
@@ -20,6 +18,7 @@ class Splash extends React.Component{
             <li className="template-list-item"><Link className="splash-link" to="/widgets">Widgets</Link></li>
           </ul>
           <Dropdown options={["Apples", "Bananas", "Space", "Time", "Canteloupes"]} label="Stuff" />
+          <CheckboxList checkboxes={["Check Me!", "Or me!", "Especially Me!", "No checkies >=["]} />
         </div>
       </div>
     );

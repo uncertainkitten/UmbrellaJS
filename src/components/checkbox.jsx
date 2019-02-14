@@ -1,4 +1,6 @@
 import React from 'react';
+import checked from '../Checkbox-checked.png';
+import unchecked from '../Checkbox-unchecked.png';
 
 class Checkbox extends React.Component{
   constructor(props){
@@ -6,15 +8,16 @@ class Checkbox extends React.Component{
   }
 
   render(){
-    let checker = '../../public/Checkbox-unchecked.png';
+    let checker = unchecked;
     let checkerAlt = "Unchecked";
     if (this.props.checked === true){
-      checker = '../../public/Checkbox-checked.png';
+      checker = checked;
       checkerAlt = "Checked";
     }
     return(
-      <div className="checkbox-container">
-        <img className="checker" onClick={this.props.handleCheck} src={checker} alt={checkerAlt}/>
+      <div className="checkbox-container" onClick={(label) => this.props.handleCheck(this.props.label)}>
+        <img className="checker" src={checker} alt={checkerAlt}/>
+        <label className="checker-label">{this.props.label}</label>
       </div>
     )
   }

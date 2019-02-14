@@ -50,7 +50,6 @@ basic common attributes of single page apps much quicker.
 - ### Button Component
 - ### Hamburger Menu
 - ### Carousel Component
-
 - ### Clock
 - ### Timer
 - ### Clicker w/ Counter
